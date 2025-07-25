@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Share styles */
+.display-flex {
+  display: flex;
+}
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.paragraph-font {
+  font-size: clamp(1rem, 2vw, 1.45rem);
+  color: #0000007b;
+}
+.color-orange {
+  color: #e95a08;
+}
+
+/* header styles */
+.nav-bar {
+  max-width: 1140px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.nav-item,
+.nav-list {
+  list-style: none;
+  gap: 30px;
+}
+.nav-item a {
+  text-decoration: none;
+}
+.nav-list li a {
+  color: #8987a1;
+}
+.nav-list .bold {
+  color: #252432;
+  font-weight: 700;
+}
+
+/* banner-container styles  */
+.banner-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  align-items: end;
+  margin-top: 7.5rem;
+}
+.banner-text h1 {
+  font-size: clamp(1rem, 5vw, 3rem);
+  margin-bottom: 15px;
+}
+
+/* Plant-section styles  */
+.plant-section {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 7.5rem;
+  text-align: center;
+}
+.plant-text {
+  max-width: 880px;
+  margin: 0 auto;
+  margin-bottom: 3.3vw;
+}
+.plant-text h1 {
+  font-size: clamp(1.5rem, 3vw, 3.5rem);
+  margin-bottom: 10px;
+}
+.plant-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  column-gap: 10px;
+}
+.card img {
+  width: 100%;
+}
+.card p,
+.card h4 {
+  margin: 10px;
+}
+.card button {
+  width: 100%;
+  background: #e95a08;
+  color: #ffffff;
+  border: none;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-bar,
+  .banner-text,
+  .plant-section {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .nav-list {
+    display: none;
+  }
+  .banner-container {
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
+  .plant-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
