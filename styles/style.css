@@ -179,6 +179,31 @@
   margin-left: -10px;
 }
 
+.footer-section {
+  max-width: 1120px;
+  margin: 50px auto;
+  justify-content: space-between;
+}
+.footer-text {
+  width: 350px;
+}
+.footer-text p {
+  margin-top: 15px;
+}
+.footer-section ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+  column-gap: 100px;
+  list-style: none;
+  color: #0000007b;
+}
+.icon-img img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
 @media screen and (max-width: 576px) {
   .nav-bar,
   .banner-text,
@@ -198,7 +223,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .plant-lover-section {
+  .plant-lover-section,
+  .footer-section {
     flex-direction: column;
     margin-top: 70px;
     gap: 20px;
@@ -208,5 +234,8 @@
   .join-input {
     margin-left: 36px;
     margin-right: 36px;
+  }
+  .footer-section ul {
+    grid-template-columns: 1fr;
   }
 }
