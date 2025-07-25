@@ -107,6 +107,45 @@
   margin-top: 10px;
 }
 
+/* plant-lover-section styles  */
+.plant-lover-section {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 210px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.plant-lover-img {
+  flex-basis: 47%;
+}
+.plant-lover-img img {
+  width: 100%;
+}
+.plant-lover-text {
+  flex-basis: 47%;
+}
+.plant-lover-text h1 {
+  font-size: clamp(1.5rem, 3.4vw, 3.5rem);
+  margin-bottom: 20px;
+}
+.plant-lover-text ul {
+  margin-left: 20px;
+}
+.plant-lover-text ul li {
+  margin-bottom: 10px;
+}
+.trusted-plant {
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  left: 350px;
+  top: -120px;
+}
+.trusted-plant img {
+  width: 100%;
+}
+
 @media screen and (max-width: 576px) {
   .nav-bar,
   .banner-text,
@@ -114,7 +153,8 @@
     margin-left: 16px;
     margin-right: 16px;
   }
-  .nav-list {
+  .nav-list,
+  .trusted-plant {
     display: none;
   }
   .banner-container {
@@ -124,5 +164,12 @@
   .plant-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .plant-lover-section {
+    flex-direction: column;
+    margin-top: 70px;
+    gap: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }
